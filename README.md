@@ -18,3 +18,11 @@ new_list = sorted(list) // 오름차순 정렬 후 반환
 new_list = sorted(list, reverse=True) // 내림차순 정렬 후 반환
 new_list = sorted(list, key=lambda item: item[2]) // 특정 키 기준으로 정렬
 ```
+
+### 숫자 다루기
+```
+import math
+a = math.sqrt(49) // 제곱근
+b = math.pow(7, 2) // 제곱
+c = round(1.12345, 2) // 소수점 버리기 -> 1.12
+```
