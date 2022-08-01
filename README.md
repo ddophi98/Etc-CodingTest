@@ -22,7 +22,9 @@ new_list = sorted(list, key=lambda item: item[2]) // 특정 키 기준으로 정
 ### 숫자 다루기
 ```
 import math
-a = math.sqrt(49) // 제곱근
-b = math.pow(7, 2) // 제곱
-c = round(1.12345, 2) // 소수점 버리기 -> 1.12
+a = math.inf // 양의 무한대
+b = -math.inf // 음의 무한대
+c = math.sqrt(49) // 제곱근 -> 7
+d = math.pow(7, 2) // 제곱 -> 49
+e = round(1.12345, 2) // 소수점 버리기 -> 1.12
 ```
