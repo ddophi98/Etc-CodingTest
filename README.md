@@ -39,5 +39,6 @@ lst = ['a', 'b', 'c', 'd']
 lst = '_'.join(lst) // a_b_c_d
 
 // 리스트에서 특정 요소의 인덱스 찾기
-idx = lst.find('b') // 1
+idx = lst.find('b') // 1 (값이 없을 땐 -1)
+idx = lst.index('b') // 1 (값이 없을 땐 에러)
 ```
