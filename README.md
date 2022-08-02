@@ -16,7 +16,8 @@ list.sort() // 오름차순 자체 정렬
 list.sort(reverse=True) // 내림차순 자체 정렬
 new_list = sorted(list) // 오름차순 정렬 후 반환
 new_list = sorted(list, reverse=True) // 내림차순 정렬 후 반환
-new_list = sorted(list, key=lambda item: item[2]) // 특정 키 기준으로 정렬
+new_list = sorted(list, key=lambda x: x[2]) // 특정 키 기준으로 정렬
+new_list = sorted(list, key=lambda x: (x[2], x[1])) // 다중 키 기준으로 정렬
 ```
 
 ### 숫자 다루기
