@@ -5,12 +5,6 @@
 A, B = map(int, input().split())
 ```
 
-### 리스트 요소들을 하나의 문자열로 합치기
-```
-lst = [A, B, C]
-D = '_'.join(lst) // A_B_C
-```
-
 ### 조합 공식
 <img width="129" alt="image" src="https://user-images.githubusercontent.com/72330884/182129405-0fffae97-6219-4fe2-b826-42c8890f5a00.png">
 <img width="194" alt="image" src="https://user-images.githubusercontent.com/72330884/182129186-f754f915-c2bd-4144-bafd-50aa6eaf1f95.png">
@@ -34,4 +28,16 @@ b = -math.inf // 음의 무한대
 c = math.sqrt(49) // 제곱근 -> 7
 d = math.pow(7, 2) // 제곱 -> 49
 e = round(1.12345, 2) // 소수점 버리기 -> 1.12
+```
+
+
+### 리스트 다루기
+```
+lst = ['a', 'b', 'c', 'd']
+
+// 리스트 요소들을 하나의 문자열로 합치기
+lst = '_'.join(lst) // a_b_c_d
+
+// 리스트에서 특정 요소의 인덱스 찾기
+idx = lst.find('b') // 1
 ```
