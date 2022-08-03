@@ -3,9 +3,18 @@
 ### 알고리즘 종류
 - 브루트 포스 알고리즘 - 모든 경우의 수를 전부 탐색함
 
-### 여러 숫자가 입력될 때 각각 나눠서 저장하기
+### 자료구조
+- Deque
 ```
-A, B = map(int, input().split())
+from collections import deque
+
+queue = deque([4, 5, 6])
+
+queue.append(7) // [4, 5, 6, 7]
+removed = queue.popleft() // [5, 6, 7], removed=4
+
+queue.appendleft(4) // [4, 5, 6, 7]
+removed = queue.pop() // [4, 5, 6], removed=7
 ```
 
 ### 조합 공식
@@ -46,7 +55,7 @@ lst.insert(1, 'g') // ['a', 'g', 'b', 'c', 'd']
 - 리스트 요소 삭제하기
 ```
 del lst[1] // ['a', 'c', 'd']
-removed = lst.pop(1) // 'b', ['a', 'c', 'd']
+removed = lst.pop(1) // ['a', 'c', 'd'], removed='b'
 lst.remove('b') // ['a', 'c', 'd']
 ```
 - 리스트 거꾸로 하기
@@ -71,5 +80,9 @@ for i in range(10):
     if i == 5:
         cnt -= 1
         break
+```
+- 여러 숫자가 입력될 때 각각 나눠서 저장하기
+```
+A, B = map(int, input().split())
 ```
 
