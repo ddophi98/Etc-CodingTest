@@ -48,3 +48,14 @@ merged_lst = '_'.join(lst) // a_b_c_d
 idx = lst.find('b') // 1 (값이 없을 땐 -1)
 idx = lst.index('b') // 1 (값이 없을 땐 에러)
 ```
+
+### 기타
+- for문을 전부 돌면서 조건에 안걸리는 것을 찾고싶을 때 -> 일단 더해놓고 조건이 걸리면 빼기
+```
+cnt += 1
+for i in range(10):
+    if i == 5:
+        cnt -= 1
+        break
+```
+
