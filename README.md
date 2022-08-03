@@ -50,11 +50,11 @@ lst.remove('b') // ['a', 'c', 'd']
 ```
 - 리스트 거꾸로 하기
 ```
-rev_lst = reversed(lst)
+lst = reversed(lst)
 ```
 - 리스트 요소들을 하나의 문자열로 합치기
 ```
-merged_lst = '_'.join(lst) // a_b_c_d
+lst = '_'.join(lst) // a_b_c_d
 ```
 - 리스트에서 특정 요소의 인덱스 찾기
 ```
