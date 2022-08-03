@@ -46,6 +46,7 @@ lst.insert(1, 'g') // ['a', 'g', 'b', 'c', 'd']
 - 리스트 요소 삭제하기
 ```
 del lst[1] // ['a', 'c', 'd']
+removed = lst.pop(1) // 'b', ['a', 'c', 'd']
 lst.remove('b') // ['a', 'c', 'd']
 ```
 - 리스트 거꾸로 하기
