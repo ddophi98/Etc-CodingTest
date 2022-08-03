@@ -35,8 +35,11 @@ e = round(1.12345, 2) // 소수점 버리기 -> 1.12
 ```
 lst = ['a', 'b', 'c', 'd']
 
+// 리스트 거꾸로 하기
+rev_lst = reversed(lst)
+
 // 리스트 요소들을 하나의 문자열로 합치기
-lst = '_'.join(lst) // a_b_c_d
+merged_lst = '_'.join(lst) // a_b_c_d
 
 // 리스트에서 특정 요소의 인덱스 찾기
 idx = lst.find('b') // 1 (값이 없을 땐 -1)
