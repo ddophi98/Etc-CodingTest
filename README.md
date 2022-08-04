@@ -4,20 +4,6 @@
 - 브루트 포스 알고리즘 - 모든 경우의 수를 전부 탐색함
 - 그리디 알고리즘 - 당장 눈앞에 보이는 최적의 상황을 골라서 최종 해답에 도달함
 
-### 자료구조
-- Deque
-```
-from collections import deque
-
-queue = deque([4, 5, 6])
-
-queue.append(7) // [4, 5, 6, 7]
-removed = queue.popleft() // [5, 6, 7], removed=4
-
-queue.appendleft(4) // [4, 5, 6, 7]
-removed = queue.pop() // [4, 5, 6], removed=7
-```
-
 ### 조합 공식
 <img width="129" alt="image" src="https://user-images.githubusercontent.com/72330884/182129405-0fffae97-6219-4fe2-b826-42c8890f5a00.png">
 <img width="194" alt="image" src="https://user-images.githubusercontent.com/72330884/182129186-f754f915-c2bd-4144-bafd-50aa6eaf1f95.png">
@@ -75,6 +61,48 @@ idx = lst.index('b') // 1 (값이 없을 땐 에러)
 - 리스트에서 교집합 찾기
 ```
 lst = list(set(a_lst) & set(b)_lst)
+```
+
+### 딕셔너리 다루기
+- 선언
+```
+dict = {'a': 1, 'b': 2}
+```
+- 추가하기
+```
+dict['c'] = 3
+```
+- 삭제하기
+```
+del dict['c']
+```
+- 존재 여부 확인
+```
+if 'c' in dict:
+    print("딕셔너리에 존재함")
+```
+- for문 이용하기
+```
+for key in dict.keys()
+for value in dict.values()
+for key, value in dict.items()
+```
+
+### Deque 다루기
+- 선언
+```
+from collections import deque
+queue = deque([4, 5, 6])
+```
+- 추가하기
+```
+queue.append(7) // [4, 5, 6, 7]
+queue.appendleft(3) // [3, 4, 5, 6, 7]
+```
+- 삭제하기
+```
+removed = queue.popleft() // [4, 5, 6, 7], removed=3
+removed = queue.pop() // [4, 5, 6], removed=7
 ```
 
 ### 기타
