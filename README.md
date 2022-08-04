@@ -72,6 +72,10 @@ lst = '_'.join(lst) // a_b_c_d
 idx = lst.find('b') // 1 (값이 없을 땐 -1)
 idx = lst.index('b') // 1 (값이 없을 땐 에러)
 ```
+- 리스트에서 교집합 찾기
+```
+lst = list(set(a_lst) & set(b)_lst)
+```
 
 ### 기타
 - for문을 전부 돌면서 조건에 안걸리는 것을 찾고싶을 때 -> 일단 더해놓고 조건이 걸리면 빼기
