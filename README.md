@@ -62,6 +62,25 @@ idx = lst.index('b') // 1 (값이 없을 땐 에러)
 ```
 lst = list(set(a_lst) & set(b)_lst)
 ```
+- 얕은 복사
+```
+a = [1, 2, 3]
+b = a
+a[0] = 4
+print(b) // [4, 2, 3]
+```
+- 깊은 복사
+```
+a = [1, 2, 3]
+b = a[:]
+a[0] = 4
+print(b) // [1, 2, 3]
+
+--- or ---
+
+import copy
+b = copy.deepcopy(a)
+```
 
 ### 딕셔너리 다루기
 - 선언
