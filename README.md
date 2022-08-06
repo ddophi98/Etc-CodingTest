@@ -34,6 +34,9 @@ b = -math.inf // 음의 무한대
 c = math.sqrt(49) // 제곱근 -> 7
 d = math.pow(7, 2) // 제곱 -> 49
 e = round(1.12345, 2) // 소수점 버리기 -> 1.12
+
+import sys
+f = sys.maxsize // 최대 정수값
 ```
 
 
