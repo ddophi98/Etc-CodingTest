@@ -33,10 +33,12 @@ a = math.inf // 양의 무한대
 b = -math.inf // 음의 무한대
 c = math.sqrt(49) // 제곱근 -> 7
 d = math.pow(7, 2) // 제곱 -> 49
-e = round(1.12345, 2) // 소수점 버리기 -> 1.12
+e = round(1.12345, 2) // 소수점 반올림 -> 1.12
+f = math.ceil(1.34) // 소수점 올림 -> 2
+g = math.floor(1.34) // 소수점 내림 -> 1
 
 import sys
-f = sys.maxsize // 최대 정수값
+h = sys.maxsize // 최대 정수값
 ```
 
 
