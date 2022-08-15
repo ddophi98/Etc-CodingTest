@@ -184,4 +184,7 @@ for i in range(10):
 ```
 A, B = map(int, input().split())
 ```
+- 세 꼭짓점의 좌표로 삼각형 넓이 구하기
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/72330884/184631017-e8c8734b-2995-4157-89b9-5957e134dc6a.png">
+
 
