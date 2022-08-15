@@ -17,7 +17,13 @@ Top Down과 Bottom Up 방식이 있음
 - **에라토스테네스의 체(소수 구하기)**  
 2부터 시작하여 숫자의 배수들을 지워나감
 
-### 조합 공식
+
+### 순열 및 조합
+```
+import itertools
+p_list = itertools.permutations(arr, 2) # 길이가 2인 순열
+c_list = itertools.combinations(arr, 2) # 길이가 2인 조합
+```
 <img width="129" alt="image" src="https://user-images.githubusercontent.com/72330884/182129405-0fffae97-6219-4fe2-b826-42c8890f5a00.png">
 <img width="194" alt="image" src="https://user-images.githubusercontent.com/72330884/182129186-f754f915-c2bd-4144-bafd-50aa6eaf1f95.png">
 <img width="293" alt="image" src="https://user-images.githubusercontent.com/72330884/182129267-e8359f82-e125-4a29-bebe-4eee39064c11.png">
