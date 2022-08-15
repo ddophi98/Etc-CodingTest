@@ -24,27 +24,27 @@ Top Down과 Bottom Up 방식이 있음
 
 ### 정렬
 ```
-list.sort() // 오름차순 자체 정렬
-list.sort(reverse=True) // 내림차순 자체 정렬
-new_list = sorted(list) // 오름차순 정렬 후 반환
-new_list = sorted(list, reverse=True) // 내림차순 정렬 후 반환
-new_list = sorted(list, key=lambda x: x[2]) // 특정 키 기준으로 정렬
-new_list = sorted(list, key=lambda x: (x[2], x[1])) // 다중 키 기준으로 정렬
+list.sort() # 오름차순 자체 정렬
+list.sort(reverse=True) # 내림차순 자체 정렬
+new_list = sorted(list) # 오름차순 정렬 후 반환
+new_list = sorted(list, reverse=True) # 내림차순 정렬 후 반환
+new_list = sorted(list, key=lambda x: x[2]) # 특정 키 기준으로 정렬
+new_list = sorted(list, key=lambda x: (x[2], x[1])) # 다중 키 기준으로 정렬
 ```
 
 ### 숫자 다루기
 ```
 import math
-a = math.inf // 양의 무한대
-b = -math.inf // 음의 무한대
-c = math.sqrt(49) // 제곱근 -> 7
-d = math.pow(7, 2) // 제곱 -> 49
-e = round(1.12345, 2) // 소수점 반올림 -> 1.12
-f = math.ceil(1.34) // 소수점 올림 -> 2
-g = math.floor(1.34) // 소수점 내림 -> 1
+a = math.inf # 양의 무한대
+b = -math.inf # 음의 무한대
+c = math.sqrt(49) # 제곱근 -> 7
+d = math.pow(7, 2) # 제곱 -> 49
+e = round(1.12345, 2) # 소수점 반올림 -> 1.12
+f = math.ceil(1.34) # 소수점 올림 -> 2
+g = math.floor(1.34) # 소수점 내림 -> 1
 
 import sys
-h = sys.maxsize // 최대 정수값
+h = sys.maxsize # 최대 정수값
 ```
 
 
@@ -54,14 +54,14 @@ lst = ['a', 'b', 'c', 'd']
 ```
 - 리스트에 요소 추가하기
 ```
-lst.append('e') // ['a', 'b', 'c', 'd', 'e']
-lst.insert(1, 'g') // ['a', 'g', 'b', 'c', 'd']
+lst.append('e') # ['a', 'b', 'c', 'd', 'e']
+lst.insert(1, 'g') # ['a', 'g', 'b', 'c', 'd']
 ```
 - 리스트 요소 삭제하기
 ```
-del lst[1] // ['a', 'c', 'd']
-removed = lst.pop(1) // ['a', 'c', 'd'], removed='b'
-lst.remove('b') // ['a', 'c', 'd']
+del lst[1] # ['a', 'c', 'd']
+removed = lst.pop(1) # ['a', 'c', 'd'], removed='b'
+lst.remove('b') # ['a', 'c', 'd']
 ```
 - 리스트 거꾸로 하기
 ```
@@ -69,12 +69,12 @@ lst = reversed(lst)
 ```
 - 리스트 요소들을 하나의 문자열로 합치기
 ```
-lst = '_'.join(lst) // a_b_c_d
+lst = '_'.join(lst) # a_b_c_d
 ```
 - 리스트에서 특정 요소의 인덱스 찾기
 ```
-idx = lst.find('b') // 1 (값이 없을 땐 -1)
-idx = lst.index('b') // 1 (값이 없을 땐 에러)
+idx = lst.find('b') # 1 (값이 없을 땐 -1)
+idx = lst.index('b') # 1 (값이 없을 땐 에러)
 ```
 - 리스트에서 교집합 찾기
 ```
@@ -85,14 +85,14 @@ lst = list(set(a_lst) & set(b)_lst)
 a = [1, 2, 3]
 b = a
 a[0] = 4
-print(b) // [4, 2, 3]
+print(b) # [4, 2, 3]
 ```
 - 깊은 복사
 ```
 a = [1, 2, 3]
 b = a[:]
 a[0] = 4
-print(b) // [1, 2, 3]
+print(b) # [1, 2, 3]
 
 --- or ---
 
@@ -103,7 +103,20 @@ b = copy.deepcopy(a)
 ```
 a = [1, 1, 1]
 b = [2, 2, 2]
-c = list(zip(a, b)) // [(1,2), (1,2), (1,2)]
+c = list(zip(a, b)) # [(1,2), (1,2), (1,2)]
+```
+
+### 문자열 다루기
+- 특정 문자 바꾸기
+```
+sentence.replace('is', 'are') # is를 are로 바꾸기
+```
+- 특정 문자로 시작 또는 끝나는지 확인하기
+```
+if sentence.startswith('wo')
+if sentence.endswith('rd')
+
+sentence.startswith('wo', 2) # 두번째 인자는 찾기 시작할 지점
 ```
 
 ### Dictionary 다루기
@@ -139,13 +152,13 @@ queue = deque([4, 5, 6])
 ```
 - 추가하기
 ```
-queue.append(7) // [4, 5, 6, 7]
-queue.appendleft(3) // [3, 4, 5, 6, 7]
+queue.append(7) # [4, 5, 6, 7]
+queue.appendleft(3) # [3, 4, 5, 6, 7]
 ```
 - 삭제하기
 ```
-removed = queue.popleft() // [4, 5, 6, 7], removed=3
-removed = queue.pop() // [4, 5, 6], removed=7
+removed = queue.popleft() # [4, 5, 6, 7], removed=3
+removed = queue.pop() # [4, 5, 6], removed=7
 ```
 
 ### 기타
