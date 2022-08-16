@@ -24,9 +24,9 @@ Top Down과 Bottom Up 방식이 있음
 def dfs():
     while len(stack) != 0:              # 스택이 빌때까지
         selected_v = stack.pop()        # 한개를 뽑아내서
-        if selected_v in passed:
+        if selected_v in done:
             continue                    # 만약 이미 한거라면 continue 하고
-        passed.append(selected_v)       # 안한거라면 했다는 표시를 해놓고
+        done.append(selected_v)         # 안한거라면 했다는 표시를 해놓고
         for v in graph[selected_v]:
             stack.append(v)             # 해당 점점으로부터 이어지는 정점들 스택에 추가하기
 ```
@@ -35,9 +35,9 @@ def dfs():
 def bfs():
     while len(queue) != 0:              # 큐가 빌때까지
         selected_v = queue.popleft()    # 한개를 뽑아내서
-        if selected_v in passed:        
+        if selected_v in done:        
             continue                    # 만약 이미 한거라면 continue 하고
-        passed.append(selected_v)       # 안한거라면 했다는 표시를 해놓고
+        done.append(selected_v)         # 안한거라면 했다는 표시를 해놓고
         for v in graph[selected_v]:     
             queue.append(v)             # 해당 정점으로부터 이어지는 정점들 큐에 추가하기
 ```
