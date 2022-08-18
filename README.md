@@ -203,6 +203,15 @@ removed = queue.pop() # [4, 5, 6], removed=7
 ```
 
 ### 기타
+- 입력받는 방법
+```
+ # 첫번째 방법
+import sys
+sys.stdin.readline().strip() # 이게 더 빠르다
+
+# 두번째 방법
+input() 
+```
 - for문을 전부 돌면서 조건에 안걸리는 것을 찾고싶을 때 -> 일단 더해놓고 조건이 걸리면 빼기
 ```
 cnt += 1
