@@ -152,6 +152,13 @@ if sentence.endswith('rd')
 
 sentence.startswith('wo', 2) # 두번째 인자는 찾기 시작할 지점
 ```
+- 대문자, 소문자
+```
+upperStr = sentence.upper()
+lowerStr = sentence.lower()
+if upperStr.isupper()
+if lowerStr.islower()
+```
 
 ### Dictionary 다루기
 - 선언
