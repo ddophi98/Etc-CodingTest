@@ -93,6 +93,11 @@ del lst[1] # ['a', 'c', 'd']
 removed = lst.pop(1) # ['a', 'c', 'd'], removed='b'
 lst.remove('b') # ['a', 'c', 'd']
 ```
+- 리스트 합치기
+```
+list1 += list2
+list1.extend(list2)
+```
 - 리스트 특정 요소 개수 세기
 ```
 num = lst.count('a')
