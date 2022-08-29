@@ -225,6 +225,12 @@ for i in range(10):
         cnt -= 1
         break
 ```
+- 리스트에서 요소 개수 딕셔너리로 받기
+```
+from collections import Counter
+lst = [a, a, b]
+count_dict = Counter(lst)
+```
 - 여러 숫자가 입력될 때 각각 나눠서 저장하기
 ```
 A, B = map(int, input().split())
