@@ -245,6 +245,6 @@ A, B = map(int, input().split())
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/72330884/184631017-e8c8734b-2995-4157-89b9-5957e134dc6a.png">
 
 ### 주의할 점
-- 전역 변수는 왠만하면 피하고 return으로 결과값을 반환하자 (이게 더 빠름)
-
+- 전역 변수는 왠만하면 피하고 return으로 결과값을 반환하자
+- 방문한 노드를 저장할 때는 ```checked.append((n, node))``` 보다는 ```checked[n].append(node)``` 형태로 저장하자
 
