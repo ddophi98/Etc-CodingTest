@@ -247,4 +247,5 @@ A, B = map(int, input().split())
 ### 주의할 점
 - 전역 변수는 왠만하면 피하고 return으로 결과값을 반환하자
 - 방문한 노드를 저장할 때는 ```checked.append((n, node))``` 보다는 ```checked[n].append(node)``` 형태로 저장하자
+- 간단한 코드상에서는 Python3가 메모리, 속도 측에서 우세할 수 있는 것이고, 복잡한 코드(반복)을 사용하는 경우에서는 PyPy3가 우세한 편이다
 
