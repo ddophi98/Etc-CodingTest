@@ -234,6 +234,10 @@ removed = heapq.heappop(heap) # [3, 7, 4], removed=1
 # 값 자체를 음수로 주기 
 heapq.heappush(heap, -value)
 max_val = -heapq.heappop(heap) 
+
+# 맨 앞 값을 기준으로 정렬된다는 점을 이용하기
+heapq.heappush(heap, (-value, value))
+max_val = heapq.heappop(heap)[1]
 ```
 
 ### 기타
