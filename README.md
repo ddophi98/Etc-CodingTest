@@ -217,32 +217,32 @@ removed = queue.pop() # [4, 5, 6], removed=7
 - 선언
 ```
 # 기본적으로 최소 힙
-import heapq
+import heapq as hq
 heap = [7, 3, 4] # 평범한 리스트
 ```
 - 힙으로 만들기
 ```
 # 반환하지 않고 인자로 넘긴 리스트 자체를 
-heap.heapify(heap)
+hq.heapify(heap)
 ```
 - 추가하기
 ```
 # 첫번째는 최솟값이지만 두번째가 그 다음 최솟값이라는 보장은 없음
-heapq.heappush(heap, 1) # [1, 7, 3, 4] 
+hq.heappush(heap, 1) # [1, 7, 3, 4] 
 ```
 - 삭제하기
 ```
-removed = heapq.heappop(heap) # [3, 7, 4], removed=1
+removed = hq.heappop(heap) # [3, 7, 4], removed=1
 ```
 - 최대 힙
 ```
 # 값 자체를 음수로 주기 
-heapq.heappush(heap, -value)
-max_val = -heapq.heappop(heap) 
+hq.heappush(heap, -value)
+max_val = -hq.heappop(heap) 
 
 # 맨 앞 값을 기준으로 정렬된다는 점을 이용하기
-heapq.heappush(heap, (-value, value))
-max_val = heapq.heappop(heap)[1]
+hq.heappush(heap, (-value, value))
+max_val = hq.heappop(heap)[1]
 ```
 
 ### 기타
