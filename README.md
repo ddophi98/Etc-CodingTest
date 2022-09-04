@@ -213,6 +213,29 @@ removed = queue.popleft() # [4, 5, 6, 7], removed=3
 removed = queue.pop() # [4, 5, 6], removed=7
 ```
 
+### Heap 다루기
+- 선언
+```
+# 기본적으로 최소 힙
+import heapq
+heap = [7, 3, 4] # 평범한 리스트
+```
+- 추가하기
+```
+# 첫번째는 최솟값이지만 두번째가 그 다음 최솟값이라는 보장은 없음
+heapq.heappush(heap, 1) # [1, 7, 3, 4] 
+```
+- 삭제하기
+```
+removed = heapq.heappop(heap) # [3, 7, 4], removed=1
+```
+- 최대 힙
+```
+# 값 자체를 음수로 주기 
+heapq.heappush(heap, -value)
+max_val = -heapq.heappop(heap) 
+```
+
 ### 기타
 - 입력받는 방법
 ```
