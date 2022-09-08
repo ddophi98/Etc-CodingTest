@@ -196,6 +196,35 @@ for value in dict.values()
 for key, value in dict.items()
 ```
 
+### Set 다루기
+- 선언
+```
+my_set = set([0, 4])
+my_set = {0, 4}
+```
+- 추가하기
+```
+# 한개 추가
+my_set.add(6)
+# 여러개 추가
+my_set.update([6, 7, 8])
+```
+- 삭제하기
+```
+# 값이 없으면 에러 발생
+my_set.remove(6)
+# 값이 없어도 에러 발생 안함
+my_set.discard(6)
+```
+- Frozenset
+```
+# frozenset은 immutable한 버전의 set이다 (딕셔너리의 키로 사용 가능)
+# 사용 방법
+my_frozenset = frozenset(my_list)
+my_frozenset = frozenset(my_set)
+```
+
+
 ### Deque 다루기
 - 선언
 ```
