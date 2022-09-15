@@ -123,7 +123,7 @@ idx = lst.index('b') # 1 (값이 없을 땐 에러)
 ```
 - 리스트에서 교집합 찾기
 ```
-lst = list(set(a_lst) & set(b)_lst)
+lst = list(set(a) & set(b))
 ```
 - 얕은 복사
 ```
