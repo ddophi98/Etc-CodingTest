@@ -189,6 +189,11 @@ del dict['c']
 if 'c' in dict:
     print("딕셔너리에 존재함")
 ```
+- 값 가져오기
+```
+val = dict.get('a')
+val = dict.get('c', 0) // 있으면 값 반환, 없으면 0 반환
+```
 - for문 이용하기
 ```
 for key in dict.keys()
