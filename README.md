@@ -24,7 +24,11 @@ https://www.weeklyps.com/entry/%ED%94%84%EB%A6%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC
 https://wooono.tistory.com/397
 - **플로이드-워셜(모든 노드간에 최소 거리 구하기)**   
 중간 지점(b) 하나씩 선택해가면서 a->b + b->c < a->c 인지 확인하고 업데이트   
-https://chanhuiseok.github.io/posts/algo-50/
+https://chanhuiseok.github.io/posts/algo-50/   
+- **위상정렬**   
+진입차수가 0인 노드를 큐에 넣음 -> 큐에서 노드를 꺼내면 그 노드와 연결된 노드들의 진입차수를 1 줄임   
+비순환 방향그래프만 적용 가능   
+https://velog.io/@kimdukbae/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC-Topological-Sorting
 - **에라토스테네스의 체(소수 구하기)**  
 2부터 시작하여 숫자의 배수들을 지워나감
 
