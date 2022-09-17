@@ -20,8 +20,11 @@ https://chanhuiseok.github.io/posts/algo-33/
 현재 정점들과 가장 작은 가중치로 연결된 정점을 선택해나감   
 https://www.weeklyps.com/entry/%ED%94%84%EB%A6%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-Prims-algorithm
 - **다익스트라(특정 노드로부터 최소 거리 구하기)**   
-출발 지점으로부터 인접합 노드 거리 구하기 -> 최솟값이 나온 노드로부터 인접한 노드 거리 구하기 -> ...반복   
+출발 지점으로부터 인접한 노드 거리 구하기 -> 최솟값이 나온 노드로부터 인접한 노드 거리 구하기 -> 기존 노드거리와 새로 계산한 노드 거리중 최솟값 선택   
 https://wooono.tistory.com/397
+- **플로이드-워셜(모든 노드간에 최소 거리 구하기)**   
+중간 지점(b) 하나씩 선택해가면서 a->b + b->c < a->c 인지 확인하고 업데이트   
+https://chanhuiseok.github.io/posts/algo-50/
 - **에라토스테네스의 체(소수 구하기)**  
 2부터 시작하여 숫자의 배수들을 지워나감
 
