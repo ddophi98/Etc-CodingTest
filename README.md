@@ -11,8 +11,11 @@
 Top Down과 Bottom Up 방식이 있음
 - **크루스칼 알고리즘(MST)**  
 사이클이 생기지 않는 선에서 가장 작은 가중치의 간선들을 선택해 나감   
-사이클 체크는 각 정점의 아이디를 부여한 후 연결되면 하나로 통일시킴   
+사이클 체크는 유니온 파인드 알고리즘을 사용함
 https://chanhuiseok.github.io/posts/algo-33/
+- **유니온 파인드**
+각각 인덱스를 부여한뒤, 합쳐질때 부모를 통일시킴
+부모를 재귀로 찾아갈 때, 거쳐간 애들의 부모도 
 - **프림 알고리즘(MST)**  
 현재 정점들과 가장 작은 가중치로 연결된 정점을 선택해나감   
 https://www.weeklyps.com/entry/%ED%94%84%EB%A6%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-Prims-algorithm
