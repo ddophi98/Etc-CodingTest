@@ -16,7 +16,7 @@
 **크루스칼 알고리즘(MST)**  
 > - 사이클이 생기지 않는 선에서 가장 작은 가중치의 간선들을 선택해 나감   
 > - 사이클 체크는 유니온 파인드 알고리즘을 사용함
-> - 백준 1647번 문제
+> - [백준 1647번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801647.md)
 > - https://chanhuiseok.github.io/posts/algo-33/
 
 **유니온 파인드**   
@@ -30,7 +30,7 @@
 **다익스트라(특정 노드로부터 최소 거리 구하기)**   
 > - 출발 지점으로부터 인접한 노드 거리 구하기 -> 최솟값이 나온 노드로부터 인접한 노드 거리 구하기 -> 기존 노드거리와 새로 계산한 노드 거리중 최솟값 선택  
 > - heap을 쓰는 방법과 안쓰는 방법이 있음   
-> - 백준 1238번 문제   
+> - [백준 1238번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801238.md)
 > - https://wooono.tistory.com/397   
 > - https://brownbears.tistory.com/554   
 
@@ -38,7 +38,7 @@
 > - 각각의 간선 봐보면서 기존 노드 거리 + 간선 < 목적지 노드 거리 이면 업데이트 하기 -> 이걸 v-1번 반복   
 > - 음수 간선에 적용 가능   
 > - v-1번째에도 업데이트가 된다면 음수 사이클 존재하는 것임   
-> - 백준 11675번 문제   
+> - [백준 11675번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%8011675.md) 
 > - https://8iggy.tistory.com/153   
 
 **플로이드-워셜(모든 노드간에 최소 거리 구하기)**   
