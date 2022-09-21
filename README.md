@@ -349,4 +349,6 @@ A, B = map(int, input().split())
 - 방문한 노드를 저장할 때는 ```checked.append((n, node))``` 보다는 ```checked[n].append(node)``` 형태로 저장하자
 - 간단한 코드상에서는 Python3가 메모리, 속도 측에서 우세할 수 있는 것이고, 복잡한 코드(반복)을 사용하는 경우에서는 PyPy3가 우세한 편이다
 - 숫자가 무조건 1자리라고만 생각하지는 말자
+- ```a in lst```로 확인하기보다는 ```dict[a] = False``` 같은걸로 확인하는게 훨씬 빠르다
+- 시간효율이 별로 중요하지 않은 문제라면, 시간복잡도가 크더라도 코드를 짧게 써서 푸는 것에 집중해보는 것도 괜찮다 [(기둥과 보)](https://school.programmers.co.kr/learn/courses/30/lessons/60061)
 
