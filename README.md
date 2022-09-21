@@ -50,6 +50,7 @@
 **위상정렬**   
 > - 진입차수가 0인 노드를 큐에 넣음 -> 큐에서 노드를 꺼내면 그 노드와 연결된 노드들의 진입차수를 1 줄임   
 > - 비순환 방향그래프만 적용 가능   
+> - [백준 2252번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%802252.md)
 > - https://velog.io/@kimdukbae/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC-Topological-Sorting
 
 **에라토스테네스의 체(소수 구하기)**  
