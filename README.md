@@ -55,6 +55,7 @@
 
 **에라토스테네스의 체(소수 구하기)**  
 > - 2부터 시작하여 숫자의 배수들을 지워나감
+> - [백준 1644번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801644.md)
 
 
 
