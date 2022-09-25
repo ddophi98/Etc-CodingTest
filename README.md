@@ -61,7 +61,7 @@
 
 ### DFS 및 BFS
 - DFS
-```
+``` python
 def dfs():
     while len(stack) != 0:              # 스택이 빌때까지
         selected_v = stack.pop()        # 한개를 뽑아내서
@@ -72,7 +72,7 @@ def dfs():
             stack.append(v)             # 해당 점점으로부터 이어지는 정점들 스택에 추가하기
 ```
 - BFS
-```
+``` python
 def bfs():
     while len(queue) != 0:              # 큐가 빌때까지
         selected_v = queue.popleft()    # 한개를 뽑아내서
@@ -84,7 +84,7 @@ def bfs():
 ```
 
 ### 순열 및 조합
-```
+``` python
 import itertools
 p_list = itertools.permutations(arr, 2) # 길이가 2인 순열
 c_list = itertools.combinations(arr, 2) # 길이가 2인 조합
@@ -94,7 +94,7 @@ c_list = itertools.combinations(arr, 2) # 길이가 2인 조합
 <img width="293" alt="image" src="https://user-images.githubusercontent.com/72330884/182129267-e8359f82-e125-4a29-bebe-4eee39064c11.png">
 
 ### 정렬
-```
+``` python
 list.sort() # 오름차순 자체 정렬
 list.sort(reverse=True) # 내림차순 자체 정렬
 new_list = sorted(list) # 오름차순 정렬 후 반환
@@ -104,7 +104,7 @@ new_list = sorted(list, key=lambda x: (x[2], x[1])) # 다중 키 기준으로 �
 ```
 
 ### 숫자 다루기
-```
+``` python
 import math
 a = math.inf # 양의 무한대
 b = -math.inf # 음의 무한대
@@ -120,55 +120,55 @@ h = sys.maxsize # 최대 정수값
 
 
 ### List 다루기
-```
+``` python
 lst = ['a', 'b', 'c', 'd']
 ```
 - 리스트에 요소 추가하기
-```
+``` python
 lst.append('e') # ['a', 'b', 'c', 'd', 'e']
 lst.insert(1, 'g') # ['a', 'g', 'b', 'c', 'd']
 ```
 - 리스트 요소 삭제하기
-```
+``` python
 del lst[1] # ['a', 'c', 'd']
 removed = lst.pop(1) # ['a', 'c', 'd'], removed='b'
 lst.remove('b') # ['a', 'c', 'd']
 ```
 - 리스트 합치기
-```
+``` python
 list1 += list2
 list1.extend(list2)
 ```
 - 리스트 특정 요소 개수 세기
-```
+``` python
 num = lst.count('a')
 ```
 - 리스트 거꾸로 하기
-```
+``` python
 lst = reversed(lst)
 ```
 - 리스트 요소들을 하나의 문자열로 합치기
-```
+``` python
 lst = '_'.join(lst) # a_b_c_d
 ```
 - 리스트에서 특정 요소의 인덱스 찾기
-```
+``` python
 idx = lst.find('b') # 1 (값이 없을 땐 -1)
 idx = lst.index('b') # 1 (값이 없을 땐 에러)
 ```
 - 리스트에서 교집합 찾기
-```
+``` python
 lst = list(set(a) & set(b))
 ```
 - 얕은 복사
-```
+``` python
 a = [1, 2, 3]
 b = a
 a[0] = 4
 print(b) # [4, 2, 3]
 ```
 - 깊은 복사
-```
+``` python
 a = [1, 2, 3]
 b = a[:]
 a[0] = 4
@@ -180,7 +180,7 @@ import copy
 b = copy.deepcopy(a)
 ```
 - 두 리스트 묶기
-```
+``` python
 a = [1, 1, 1]
 b = [2, 2, 2]
 c = list(zip(a, b)) # [(1,2), (1,2), (1,2)]
@@ -188,18 +188,18 @@ c = list(zip(a, b)) # [(1,2), (1,2), (1,2)]
 
 ### 문자열 다루기
 - 특정 문자 바꾸기
-```
+``` python
 sentence.replace('is', 'are') # is를 are로 바꾸기
 ```
 - 특정 문자로 시작 또는 끝나는지 확인하기
-```
+``` python
 if sentence.startswith('wo')
 if sentence.endswith('rd')
 
 sentence.startswith('wo', 2) # 두번째 인자는 찾기 시작할 지점
 ```
 - 대문자, 소문자
-```
+``` python
 upperStr = sentence.upper()
 lowerStr = sentence.lower()
 if upperStr.isupper()
@@ -208,29 +208,29 @@ if lowerStr.islower()
 
 ### Dictionary 다루기
 - 선언
-```
+``` python
 dict = {'a': 1, 'b': 2}
 ```
 - 추가하기
-```
+``` python
 dict['c'] = 3
 ```
 - 삭제하기
-```
+``` python
 del dict['c']
 ```
 - 존재 여부 확인
-```
+``` python
 if 'c' in dict:
     print("딕셔너리에 존재함")
 ```
 - 값 가져오기
-```
+``` python
 val = dict.get('a')
 val = dict.get('c', 0) // 있으면 값 반환, 없으면 0 반환
 ```
 - for문 이용하기
-```
+``` python
 for key in dict.keys()
 for value in dict.values()
 for key, value in dict.items()
@@ -238,26 +238,26 @@ for key, value in dict.items()
 
 ### Set 다루기
 - 선언
-```
+``` python
 my_set = set([0, 4])
 my_set = {0, 4}
 ```
 - 추가하기
-```
+``` python
 # 한개 추가
 my_set.add(6)
 # 여러개 추가
 my_set.update([6, 7, 8])
 ```
 - 삭제하기
-```
+``` python
 # 값이 없으면 에러 발생
 my_set.remove(6)
 # 값이 없어도 에러 발생 안함
 my_set.discard(6)
 ```
 - Frozenset
-```
+``` python
 # frozenset은 immutable한 버전의 set이다 (딕셔너리의 키로 사용 가능)
 # 사용 방법
 my_frozenset = frozenset(my_list)
@@ -267,44 +267,44 @@ my_frozenset = frozenset(my_set)
 
 ### Deque 다루기
 - 선언
-```
+``` python
 from collections import deque
 queue = deque([4, 5, 6])
 ```
 - 추가하기
-```
+``` python
 queue.append(7) # [4, 5, 6, 7]
 queue.appendleft(3) # [3, 4, 5, 6, 7]
 ```
 - 삭제하기
-```
+``` python
 removed = queue.popleft() # [4, 5, 6, 7], removed=3
 removed = queue.pop() # [4, 5, 6], removed=7
 ```
 
 ### Heap 다루기
 - 선언
-```
+``` python
 # 기본적으로 최소 힙
 import heapq as hq
 heap = [7, 3, 4] # 평범한 리스트
 ```
 - 힙으로 만들기
-```
+``` python
 # 반환하지 않고 인자로 넘긴 리스트 자체를 
 hq.heapify(heap)
 ```
 - 추가하기
-```
+``` python
 # 첫번째는 최솟값이지만 두번째가 그 다음 최솟값이라는 보장은 없음
 hq.heappush(heap, 1) # [1, 7, 3, 4] 
 ```
 - 삭제하기
-```
+``` python
 removed = hq.heappop(heap) # [3, 7, 4], removed=1
 ```
 - 최대 힙
-```
+``` python
 # 값 자체를 음수로 주기 
 hq.heappush(heap, -value)
 max_val = -hq.heappop(heap) 
@@ -316,51 +316,51 @@ max_val = hq.heappop(heap)[1]
 
 ### 정규 표현식
 - 특정 문자중에 매치
-```
+``` python
 [abc] # a,b,c 중 하나와 매치
 [a-z] # a부터 z까지 중 하나와 매치
 [a-zA-Z] # 알파벳과 매치
 [0-9] # 숫자와 매치
 ```
 - 아무 문자 중에 매치
-```
+``` python
 a.b # acb, a1b와 다 매치됨 (\n은 제외)
 a[.]b # a.b와 매치됨
 ```
 - 반복되는 문자
-```
+``` python
 ca*t # 0개 이상 반복
 ca+t # 1개 이상 반복
 ca?t # 0개거나 1개거나
 ca{2,4}t # 2개 이상 4개 이하 반복
 ```
 - 파이썬에서 쓰는법
-```
+``` python
 import re
 re.compile('[a-z]+')
 ```
-```
+``` python
 # 문자열의 처음부터 매칭되는지 확인
 # match 객체 반환
 # if rst / else 로 사용 가능
 rst = re.match('python is the best')
 ```
-```
+``` python
 # 문자열의 처음이 아니더라도 중간부터 매칭되는지 확인
 # match 객체 반환
 # if rst / else 로 사용 가능
 rst = re.search('python is the best')
 ```
-```
+``` python
 # 매치되는 문자열들을 리스트로 반환
 rst = re.findall('python is the best')
 ```
-```
+``` python
 # 매치되는 문자열들을 match객체의 iterator로 반환
 rst = re.finditer('python is the best')
 ```
-```
-m = match객체
+``` python
+m = (match 객체)
 m.group() # 문자열
 m.start() # 시작 지점
 m.end() # 끝 지점+1
@@ -369,7 +369,7 @@ m.span() # (시작 지점, 끝 지점+1)
 
 ### 기타
 - 입력받는 방법
-```
+``` python
  # 첫번째 방법
 import sys
 sys.stdin.readline().strip() # 이게 더 빠르다
@@ -378,7 +378,7 @@ sys.stdin.readline().strip() # 이게 더 빠르다
 input() 
 ```
 - for문을 전부 돌면서 조건에 안걸리는 것을 찾고싶을 때 -> 일단 더해놓고 조건이 걸리면 빼기
-```
+``` python
 cnt += 1
 for i in range(10):
     if i == 5:
@@ -386,13 +386,13 @@ for i in range(10):
         break
 ```
 - 리스트에서 요소 개수 딕셔너리로 받기
-```
+``` python
 from collections import Counter
 lst = [a, a, b]
 count_dict = Counter(lst)
 ```
 - 여러 숫자가 입력될 때 각각 나눠서 저장하기
-```
+``` python
 A, B = map(int, input().split())
 ```
 - 세 꼭짓점의 좌표로 삼각형 넓이 구하기
