@@ -1,5 +1,5 @@
 # 파이썬 코테에서 유용한 팁들
-### 목차
+## 목차
 - [알고리즘 종류](#알고리즘-종류)   
 - [DFS 및 BFS](#dfs-및-bfs)   
 - [순열 및 조합](#순열-및-조합)   
@@ -16,7 +16,7 @@
 - [주의할 점](#주의할-점)   
 
 
-### 알고리즘 종류
+## 알고리즘 종류
 
 **브루트 포스 알고리즘**   
 > - 모든 경우의 수를 전부 탐색함  
@@ -75,7 +75,7 @@
 
 
 
-### DFS 및 BFS
+## DFS 및 BFS
 - DFS
 ``` python
 def dfs():
@@ -99,7 +99,7 @@ def bfs():
             queue.append(v)             # 해당 정점으로부터 이어지는 정점들 큐에 추가하기
 ```
 
-### 순열 및 조합
+## 순열 및 조합
 ``` python
 import itertools
 p_list = itertools.permutations(arr, 2) # 길이가 2인 순열
@@ -109,7 +109,7 @@ c_list = itertools.combinations(arr, 2) # 길이가 2인 조합
 <img width="194" alt="image" src="https://user-images.githubusercontent.com/72330884/182129186-f754f915-c2bd-4144-bafd-50aa6eaf1f95.png">
 <img width="293" alt="image" src="https://user-images.githubusercontent.com/72330884/182129267-e8359f82-e125-4a29-bebe-4eee39064c11.png">
 
-### 정렬
+## 정렬
 ``` python
 list.sort() # 오름차순 자체 정렬
 list.sort(reverse=True) # 내림차순 자체 정렬
@@ -119,7 +119,7 @@ new_list = sorted(list, key=lambda x: x[2]) # 특정 키 기준으로 정렬
 new_list = sorted(list, key=lambda x: (x[2], x[1])) # 다중 키 기준으로 정렬
 ```
 
-### 숫자 다루기
+## 숫자 다루기
 ``` python
 import math
 a = math.inf # 양의 무한대
@@ -135,7 +135,7 @@ h = sys.maxsize # 최대 정수값
 ```
 
 
-### List 다루기
+## List 다루기
 ``` python
 lst = ['a', 'b', 'c', 'd']
 ```
@@ -202,7 +202,7 @@ b = [2, 2, 2]
 c = list(zip(a, b)) # [(1,2), (1,2), (1,2)]
 ```
 
-### 문자열 다루기
+## 문자열 다루기
 - 특정 문자 바꾸기
 ``` python
 sentence.replace('is', 'are') # is를 are로 바꾸기
@@ -252,7 +252,7 @@ for value in dict.values()
 for key, value in dict.items()
 ```
 
-### Set 다루기
+## Set 다루기
 - 선언
 ``` python
 my_set = set([0, 4])
@@ -281,7 +281,7 @@ my_frozenset = frozenset(my_set)
 ```
 
 
-### Deque 다루기
+## Deque 다루기
 - 선언
 ``` python
 from collections import deque
@@ -298,7 +298,7 @@ removed = queue.popleft() # [4, 5, 6, 7], removed=3
 removed = queue.pop() # [4, 5, 6], removed=7
 ```
 
-### Heap 다루기
+## Heap 다루기
 - 선언
 ``` python
 # 기본적으로 최소 힙
@@ -330,7 +330,7 @@ hq.heappush(heap, (-value, value))
 max_val = hq.heappop(heap)[1]
 ```
 
-### 정규 표현식
+## 정규 표현식
 - 특정 문자중에 매치
 ``` python
 [abc] # a,b,c 중 하나와 매치
@@ -383,7 +383,7 @@ m.end() # 끝 지점+1
 m.span() # (시작 지점, 끝 지점+1)
 ```
 
-### 기타
+## 기타
 - 입력받는 방법
 ``` python
  # 첫번째 방법
@@ -414,7 +414,7 @@ A, B = map(int, input().split())
 - 세 꼭짓점의 좌표로 삼각형 넓이 구하기
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/72330884/184631017-e8c8734b-2995-4157-89b9-5957e134dc6a.png">
 
-### 주의할 점
+## 주의할 점
 - 전역 변수는 왠만하면 피하고 return으로 결과값을 반환하자
 - 방문한 노드를 저장할 때는 ```checked.append((n, node))``` 보다는 ```checked[n].append(node)``` 형태로 저장하자
 - 간단한 코드상에서는 Python3가 메모리, 속도 측에서 우세할 수 있는 것이고, 복잡한 코드(반복)을 사용하는 경우에서는 PyPy3가 우세한 편이다
