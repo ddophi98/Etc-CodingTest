@@ -314,6 +314,59 @@ hq.heappush(heap, (-value, value))
 max_val = hq.heappop(heap)[1]
 ```
 
+### 정규 표현식
+- 특정 문자중에 매치
+```
+[abc] # a,b,c 중 하나와 매치
+[a-z] # a부터 z까지 중 하나와 매치
+[a-zA-Z] # 알파벳과 매치
+[0-9] # 숫자와 매치
+```
+- 아무 문자 중에 매치
+```
+a.b # acb, a1b와 다 매치됨 (\n은 제외)
+a[.]b # a.b와 매치됨
+```
+- 반복되는 문자
+```
+ca*t # 0개 이상 반복
+ca+t # 1개 이상 반복
+ca?t # 0개거나 1개거나
+ca{2,4}t # 2개 이상 4개 이하 반복
+```
+- 파이썬에서 쓰는법
+```
+import re
+re.compile('[a-z]+')
+```
+```
+# 문자열의 처음부터 매칭되는지 확인
+# match 객체 반환
+# if rst / else 로 사용 가능
+rst = re.match('python is the best')
+```
+```
+# 문자열의 처음이 아니더라도 중간부터 매칭되는지 확인
+# match 객체 반환
+# if rst / else 로 사용 가능
+rst = re.search('python is the best')
+```
+```
+# 매치되는 문자열들을 리스트로 반환
+rst = re.findall('python is the best')
+```
+```
+# 매치되는 문자열들을 match객체의 iterator로 반환
+rst = re.finditer('python is the best')
+```
+```
+m = match객체
+m.group() # 문자열
+m.start() # 시작 지점
+m.end() # 끝 지점+1
+m.span() # (시작 지점, 끝 지점+1)
+```
+
 ### 기타
 - 입력받는 방법
 ```
