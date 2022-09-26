@@ -100,11 +100,42 @@ def bfs():
 ```
 
 ## 순열 및 조합
+- itertool 사용 O
 ``` python
 import itertools
 p_list = itertools.permutations(arr, 2) # 길이가 2인 순열
 c_list = itertools.combinations(arr, 2) # 길이가 2인 조합
 ```
+- itertool 사용 X 
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/72330884/192279911-79e8d22a-5cfc-45bd-8188-27908600415c.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/72330884/192279965-245d574b-c98a-412e-82f7-78ae3872a8a9.png">
+
+``` python
+# 조합
+def combination(arr, remain):
+    comb_lst = []
+    if remain == 0:
+        return [[]]
+
+    for i in range(len(arr)):
+        for rst in combination(arr[i+1:], remain-1):
+            comb_lst.append([arr[i]] + rst)
+
+    return comb_lst
+``` 
+``` python
+# 순열
+def permutation(arr, remain):
+    perm_lst = []
+    if remain == 0:
+        return [[]]
+
+    for i in range(len(arr)):
+        for rst in permutation(arr[:i] + arr[i+1:], remain-1):
+            perm_lst.append([arr[i]] + rst)
+``` 
+
 <img width="129" alt="image" src="https://user-images.githubusercontent.com/72330884/182129405-0fffae97-6219-4fe2-b826-42c8890f5a00.png">
 <img width="194" alt="image" src="https://user-images.githubusercontent.com/72330884/182129186-f754f915-c2bd-4144-bafd-50aa6eaf1f95.png">
 <img width="293" alt="image" src="https://user-images.githubusercontent.com/72330884/182129267-e8359f82-e125-4a29-bebe-4eee39064c11.png">
