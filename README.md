@@ -333,6 +333,7 @@ max_val = hq.heappop(heap)[1]
 ## 정규 표현식
 - 특정 문자중에 매치
 ``` python
+a|b|c # a,b,c 중 하나와 매치
 [abc] # a,b,c 중 하나와 매치
 [a-z] # a부터 z까지 중 하나와 매치
 [a-zA-Z] # 알파벳과 매치
