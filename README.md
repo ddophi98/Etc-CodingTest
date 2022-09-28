@@ -447,6 +447,11 @@ count_dict = Counter(lst)
 ``` python
 A, B = map(int, input().split())
 ```
+- 재귀한도 늘리기
+``` python
+import sys
+sys.setrecursionlimit(10**6) # 기본 1000으로 되어있음
+```
 - 세 꼭짓점의 좌표로 삼각형 넓이 구하기
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/72330884/184631017-e8c8734b-2995-4157-89b9-5957e134dc6a.png">
 
@@ -457,4 +462,5 @@ A, B = map(int, input().split())
 - 숫자가 무조건 1자리라고만 생각하지는 말자
 - ```a in lst```로 확인하기보다는 ```dict[a] = False``` 같은걸로 확인하는게 훨씬 빠르다
 - 시간효율이 별로 중요하지 않은 문제라면, 시간복잡도가 크더라도 코드를 짧게 써서 푸는 것에 집중해보는 것도 괜찮다 [(기둥과 보)](https://school.programmers.co.kr/learn/courses/30/lessons/60061)
+- 흔하지 않은 경우긴 하지만 재귀한도 때문에 런타임 에러가 발생할 수도 있으니 알고는 있자 [(길찾기 게임)](https://school.programmers.co.kr/learn/courses/30/lessons/42892)
 
