@@ -459,7 +459,7 @@ sys.setrecursionlimit(10**6) # 기본 1000으로 되어있음
 - 전역 변수는 왠만하면 피하고 return으로 결과값을 반환하자
 - 방문한 노드를 저장할 때는 ```checked.append((n, node))``` 보다는 ```checked[n].append(node)``` 형태로 저장하자
 - 간단한 코드상에서는 Python3가 메모리, 속도 측에서 우세할 수 있는 것이고, 복잡한 코드(반복)을 사용하는 경우에서는 PyPy3가 우세한 편이다
-- 숫자가 무조건 1자리라고만 생각하지는 말자
+- 숫자가 무조건 자리라고만 생각하지는 말자
 - ```a in lst```로 확인하기보다는 ```dict[a] = False``` 같은걸로 확인하는게 훨씬 빠르다
 - 시간효율이 별로 중요하지 않은 문제라면, 시간복잡도가 크더라도 코드를 짧게 써서 푸는 것에 집중해보는 것도 괜찮다 [(기둥과 보)](https://school.programmers.co.kr/learn/courses/30/lessons/60061)
 - 흔하지 않은 경우긴 하지만 재귀한도 때문에 런타임 에러가 발생할 수도 있으니 알고는 있자 [(길찾기 게임)](https://school.programmers.co.kr/learn/courses/30/lessons/42892)
