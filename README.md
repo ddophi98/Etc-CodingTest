@@ -2,7 +2,8 @@
 ## 목차
 - [알고리즘 종류](#알고리즘-종류)   
 - [DFS 및 BFS](#dfs-및-bfs)   
-- [순열 및 조합](#순열-및-조합)   
+- [순열 및 조합](#순열-및-조합)  
+- [이진법](#이진법)
 - [정렬](#정렬)   
 - [숫자 다루기](#숫자-다루기)   
 - [List 다루기](#list-다루기)   
@@ -140,6 +141,25 @@ def permutation(arr, remain):
 <img width="194" alt="image" src="https://user-images.githubusercontent.com/72330884/182129186-f754f915-c2bd-4144-bafd-50aa6eaf1f95.png">
 <img width="293" alt="image" src="https://user-images.githubusercontent.com/72330884/182129267-e8359f82-e125-4a29-bebe-4eee39064c11.png">
 
+## 이진법
+- 함수 사용 O
+``` python
+num = 6
+bin_num = bin(num)[2:]
+print(bin_num) # "110"
+``` 
+
+- 함수 사용 X
+``` python
+num = 6
+bin_num = ''
+while num != 0:
+    bin_num += str(num % 2)
+    num = num // 2
+bin_num = bin_num[::-1]
+print(bin_num) # "110"
+```
+
 ## 정렬
 ``` python
 list.sort() # 오름차순 자체 정렬
@@ -193,6 +213,7 @@ num = lst.count('a')
 - 리스트 거꾸로 하기
 ``` python
 lst = reversed(lst)
+lst = lst[::-1]
 ```
 - 리스트 요소들을 하나의 문자열로 합치기
 ``` python
