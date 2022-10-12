@@ -486,4 +486,5 @@ sys.setrecursionlimit(10**6) # 기본 1000으로 되어있음
 - 흔하지 않은 경우긴 하지만 재귀한도 때문에 런타임 에러가 발생할 수도 있으니 알고는 있자 [(길찾기 게임)](https://school.programmers.co.kr/learn/courses/30/lessons/42892)
 - 배열을 엄청 크게 잡아야만 풀리는 문제도 있다 [(광고 삽입)](https://school.programmers.co.kr/learn/courses/30/lessons/72414)
 - 바로 문제의 최종 답을 생각해내는 것이 아니라 현재 필요한 기능을 하나씩 함수로 빼보자 [(드래곤 커브)](https://www.acmicpc.net/problem/15685)
+- bfs를 사용할 때는 가장 먼저 찾아지는 값이 최솟값이다 [(아기 상어)](https://www.acmicpc.net/problem/16236)
 
