@@ -297,8 +297,9 @@ if 'c' in dict:
 ```
 - 값 가져오기
 ``` python
+val = dict['a']
 val = dict.get('a')
-val = dict.get('c', 0) // 있으면 값 반환, 없으면 0 반환
+val = dict.get('a', 0) // 있으면 값 반환, 없으면 0 반환
 ```
 - for문 이용하기
 ``` python
