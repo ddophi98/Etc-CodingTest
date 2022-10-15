@@ -414,27 +414,27 @@ ca{2,4}t # 2개 이상 4개 이하 반복
 - 파이썬에서 쓰는법
 ``` python
 import re
-re.compile('[a-z]+')
+pattern = re.compile('[a-z]+')
 ```
 ``` python
 # 문자열의 처음부터 매칭되는지 확인
 # match 객체 반환
 # if rst / else 로 사용 가능
-rst = re.match('python is the best')
+rst = pattern.match('python is the best')
 ```
 ``` python
 # 문자열의 처음이 아니더라도 중간부터 매칭되는지 확인
 # match 객체 반환
 # if rst / else 로 사용 가능
-rst = re.search('python is the best')
+rst = pattern.search('python is the best')
 ```
 ``` python
 # 매치되는 문자열들을 리스트로 반환
-rst = re.findall('python is the best')
+rst = pattern.findall('python is the best')
 ```
 ``` python
 # 매치되는 문자열들을 match객체의 iterator로 반환
-rst = re.finditer('python is the best')
+rst = pattern.finditer('python is the best')
 ```
 ``` python
 m = (match 객체)
