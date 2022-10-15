@@ -256,6 +256,12 @@ a = [1, 1, 1]
 b = [2, 2, 2]
 c = list(zip(a, b)) # [(1,2), (1,2), (1,2)]
 ```
+- 리스트에서 요소 개수 딕셔너리로 받기
+``` python
+from collections import Counter
+lst = [a, a, b]
+count_dict = Counter(lst) # {'a': 2, 'b': 1}
+```
 
 ## 문자열 다루기
 - 특정 문자 바꾸기
@@ -461,12 +467,6 @@ for i in range(10):
     if i == 5:
         cnt -= 1
         break
-```
-- 리스트에서 요소 개수 딕셔너리로 받기
-``` python
-from collections import Counter
-lst = [a, a, b]
-count_dict = Counter(lst)
 ```
 - 여러 숫자가 입력될 때 각각 나눠서 저장하기
 ``` python
