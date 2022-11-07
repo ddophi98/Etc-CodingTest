@@ -491,4 +491,5 @@ sys.setrecursionlimit(10**6) # 기본 1000으로 되어있음
 - 배열을 엄청 크게 잡아야만 풀리는 문제도 있다 [(광고 삽입)](https://school.programmers.co.kr/learn/courses/30/lessons/72414)
 - 바로 문제의 최종 답을 생각해내는 것이 아니라 현재 필요한 기능을 하나씩 함수로 빼보자 [(드래곤 커브)](https://www.acmicpc.net/problem/15685)
 - bfs를 사용할 때는 가장 먼저 찾아지는 값이 최솟값이다 [(아기 상어)](https://www.acmicpc.net/problem/16236)
-
+- 유명한 알고리즘을 그대로 따라하는 것이 아니라 응용해서 써야할 때도 있다 [(등산 코스)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4(%EB%93%B1%EC%82%B0%20%EC%BD%94%EC%8A%A4).md)
+- in 연산을 할 때는 list보다는 set에 하는 것이 시간 효율이 
