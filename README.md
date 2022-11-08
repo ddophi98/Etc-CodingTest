@@ -477,6 +477,21 @@ A, B = map(int, input().split())
 import sys
 sys.setrecursionlimit(10**6) # 기본 1000으로 되어있음
 ```
+- 여러줄에 걸쳐서 코드 쓰기
+``` python
+# 첫번째 방법
+if (a and
+    b and
+    c):
+    return True
+
+# 두번째 방법
+if a and \
+   b and \
+   c:
+   return True
+```
+
 - 세 꼭짓점의 좌표로 삼각형 넓이 구하기
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/72330884/184631017-e8c8734b-2995-4157-89b9-5957e134dc6a.png">
 
