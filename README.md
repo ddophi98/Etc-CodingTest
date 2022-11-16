@@ -399,15 +399,17 @@ a|b|c # a,b,c 중 하나와 매치
 [abc] # a,b,c 중 하나와 매치
 [a-z] # a부터 z까지 중 하나와 매치
 [a-zA-Z] # 알파벳과 매치
+[^a-zA-Z] # 알파벳을 제외한 문자와 매치
 [0-9] # 숫자와 매치
 
 # 주의할 점
 [(ab)c] # ab와 c중에 선택하는게 아니라 a,b,c,(,) 중에 선택하는 것이다
-^(^ # 괄호 문자 자체를 찾고 싶다면 ^\(^로 써야한다
+a(b # 괄호 문자 자체를 찾고 싶다면 a\(b로 써야한다
 ```
 - 아무 문자 중에 매치
 ``` python
 a.b # acb, a1b와 다 매치됨 (\n은 제외)
+a.*b # a1010b, ab와 다 매치됨
 a[.]b # a.b와 매치됨
 ```
 - 반복되는 문자
@@ -442,6 +444,11 @@ rst = pattern.findall('python is the best')
 # 매치되는 문자열들을 match객체의 iterator로 반환
 rst = pattern.finditer('python is the best')
 ```
+``` python
+# 매치되는 문자열들을 다른 문자열로 변환한 뒤 전체 문자열 반환
+rst = pattern.sub('changed string', 'python is the best')
+```
+
 ``` python
 m = (match 객체)
 m.group() # 문자열
