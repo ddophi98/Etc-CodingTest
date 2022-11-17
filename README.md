@@ -402,7 +402,7 @@ a|b|c # a,b,c 중 하나와 매치
 [^a-zA-Z] # 알파벳을 제외한 문자와 매치
 [0-9] # 숫자와 매치
 \s # 공백
-\S # 
+\S # 공백을 제외한 문자
 
 # 주의할 점
 [(ab)c] # ab와 c중에 선택하는게 아니라 a,b,c,(,) 중에 선택하는 것이다
@@ -427,9 +427,9 @@ import re
 pattern = re.compile('[a-z]+')
 ```
 ``` python
+pattern = re.compile('\s') # \s가 공백으로 변해버림
 pattern = re.compile(r'\s') # \s로 컴파일 됨
 pattern = re.compile('\\s') # \s로 컴파일 됨
-pattern = re.compile('\s') # \s가 공백으로 바껴버림
 ```
 ``` python
 # 문자열의 처음부터 매칭되는지 확인
@@ -454,6 +454,10 @@ rst = pattern.finditer('python is the best')
 ``` python
 # 매치되는 문자열들을 다른 문자열로 변환한 뒤 전체 문자열 반환
 rst = pattern.sub('changed string', 'python is the best')
+```
+``` python
+# 전체 문자열에서 매치되는 패턴 문자를 기준으로 양 옆 문자를 나눠버린 리스트 반환
+rst = pattern.split('python is the best')
 ```
 
 ``` python
