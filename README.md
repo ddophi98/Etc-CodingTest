@@ -427,6 +427,11 @@ import re
 pattern = re.compile('[a-z]+')
 ```
 ``` python
+pattern = re.compile(r'\s') # \s로 컴파일 됨
+pattern = re.compile('\\s') # \s로 컴파일 됨
+pattern = re.compile('\s') # \s가 공백으로 바껴버림
+```
+``` python
 # 문자열의 처음부터 매칭되는지 확인
 # match 객체 반환
 # if rst / else 로 사용 가능
