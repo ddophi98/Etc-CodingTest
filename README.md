@@ -526,4 +526,5 @@ if a and \
 - 바로 문제의 최종 답을 생각해내는 것이 아니라 현재 필요한 기능을 하나씩 함수로 빼보자 [(드래곤 커브)](https://www.acmicpc.net/problem/15685)
 - bfs를 사용할 때는 가장 먼저 찾아지는 값이 최솟값이다 [(아기 상어)](https://www.acmicpc.net/problem/16236)
 - 유명한 알고리즘을 그대로 따라하는 것이 아니라 응용해서 써야할 때도 있다 [(등산 코스)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4(%EB%93%B1%EC%82%B0%20%EC%BD%94%EC%8A%A4).md)
-- in 연산을 할 때는 list보다는 set에 하는 것이 시간 효율이 
+- in 연산을 할 때는 list보다는 set에 하는 것이 시간 효율이 좋다
+- bfs 문제에서 큐에 append하는 데이터는 최대한 줄이자 (시간과 공간 복잡도를 둘 다 줄일 수 있다) [(알고스팟)](https://www.acmicpc.net/problem/1261)
