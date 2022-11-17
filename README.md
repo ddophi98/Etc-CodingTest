@@ -452,6 +452,7 @@ rst = pattern.sub('changed string', 'python is the best')
 ``` python
 m = (match 객체)
 m.group() # 문자열
+m.group(1) # 첫번째 괄호 안 문자열
 m.start() # 시작 지점
 m.end() # 끝 지점+1
 m.span() # (시작 지점, 끝 지점+1)
