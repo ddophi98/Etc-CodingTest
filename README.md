@@ -135,6 +135,8 @@ def permutation(arr, remain):
     for i in range(len(arr)):
         for rst in permutation(arr[:i] + arr[i+1:], remain-1):
             perm_lst.append([arr[i]] + rst)
+            
+    return perm_lst
 ``` 
 
 <img width="129" alt="image" src="https://user-images.githubusercontent.com/72330884/182129405-0fffae97-6219-4fe2-b826-42c8890f5a00.png">
