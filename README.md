@@ -505,6 +505,17 @@ for i in range(10):
         cnt -= 1
         break
 ```
+- 소수인지 판별하기
+``` python
+def is_prime(num):
+    if num < 2:
+        return False
+
+    for i in range(2, int(num**0.5)+1):
+        if num % i == 0:
+            return False
+    return True
+```
 - 여러 숫자가 입력될 때 각각 나눠서 저장하기
 ``` python
 A, B = map(int, input().split())
