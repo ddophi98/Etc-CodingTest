@@ -232,10 +232,6 @@ lst = '_'.join(lst) # a_b_c_d
 idx = lst.find('b') # 1 (값이 없을 땐 -1)
 idx = lst.index('b') # 1 (값이 없을 땐 에러)
 ```
-- 리스트에서 교집합 찾기
-``` python
-lst = list(set(a) & set(b))
-```
 - 얕은 복사
 ``` python
 a = [1, 2, 3]
@@ -338,6 +334,23 @@ my_set.update([6, 7, 8])
 my_set.remove(6)
 # 값이 없어도 에러 발생 안함
 my_set.discard(6)
+```
+- 집합 연산
+``` python
+s1 = {1, 2, 3, 4}
+s2 = {3, 4, 5}
+
+# 합집합
+s1 | s2  # {1, 2, 3, 4, 5}
+s1.union(s2)  # {1, 2, 3, 4, 5}
+
+# 교집합
+s1 & s2  # {3, 4}
+s1.intersection(s2)  # {3, 4}
+
+# 차집합
+s1 - s2  # {1, 2}
+s1.difference(s2)  # {1, 2}
 ```
 - Frozenset
 ``` python
