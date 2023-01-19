@@ -550,7 +550,7 @@ if a and \
 - 숫자가 무조건 한자리라고만 생각하지는 말자
 - ```a in lst```로 확인하기보다는 ```dict[a] = False``` 같은걸로 확인하는게 빠르다
 - 그리고 만약 가능하다면 ```visited = [[False for _ in range(w)] for _ in range(h)]``` 처럼 visited도 graph와 같은 형태로 정의하고 체크하는게 훨씬 빠르다
-- 투포인터는 l, r = 0, 0 에서 시작할수도 있고, l, r = 0, n 에서 시작할 수도 있다
+- 투포인터는 ```l, r = 0, 0``` 에서 시작할수도 있고, ```l, r = 0, n``` 에서 시작할 수도 있다
 - 시간효율이 별로 중요하지 않은 문제라면, 시간복잡도가 크더라도 코드를 짧게 써서 푸는 것에 집중해보는 것도 괜찮다 [(기둥과 보)](https://school.programmers.co.kr/learn/courses/30/lessons/60061)
 - 흔하지 않은 경우긴 하지만 재귀한도 때문에 런타임 에러가 발생할 수도 있으니 알고는 있자 [(길찾기 게임)](https://school.programmers.co.kr/learn/courses/30/lessons/42892)
 - 배열을 엄청 크게 잡아야만 풀리는 문제도 있다 [(광고 삽입)](https://school.programmers.co.kr/learn/courses/30/lessons/72414)
