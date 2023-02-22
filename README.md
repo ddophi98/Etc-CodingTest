@@ -176,7 +176,9 @@ new_list = sorted(list, key=lambda x: (x[2], x[1])) # 다중 키 기준으로 �
 ``` python
 import math
 a = math.inf # 양의 무한대
+a = float('inf') # 양의 무한대
 b = -math.inf # 음의 무한대
+b = float('-inf') # 음의 무한대
 c = math.sqrt(49) # 제곱근 -> 7
 d = math.pow(7, 2) # 제곱 -> 49
 d = 7**2 # 제곱 -> 49
