@@ -542,6 +542,11 @@ if a and \
    return True
 ```
 
+- 이차원 배열에서 최댓값 구하기
+``` python
+max(map(max, dp))
+```
+
 - 세 꼭짓점의 좌표로 삼각형 넓이 구하기
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/72330884/184631017-e8c8734b-2995-4157-89b9-5957e134dc6a.png">
 
