@@ -439,12 +439,17 @@ a[.]b # a.b와 매치됨
 ca*t # 0개 이상 반복
 ca+t # 1개 이상 반복
 ca?t # 0개거나 1개거나
+ca{2}t # 2번 반복
 ca{2,4}t # 2개 이상 4개 이하 반복
 ```
 - 파이썬에서 쓰는법
 ``` python
 import re
 pattern = re.compile('[a-z]+')
+
+# or
+
+rst = re.match('[a-z]+', 'python is the best')
 ```
 ``` python
 pattern = re.compile('\s') # \s가 공백으로 변해버림
@@ -464,16 +469,16 @@ rst = pattern.match('python is the best')
 rst = pattern.search('python is the best')
 ```
 ``` python
-# 매치되는 문자열들을 리스트로 반환
-rst = pattern.findall('python is the best')
-```
-``` python
 # 매치되는 문자열들을 match객체의 iterator로 반환
 rst = pattern.finditer('python is the best')
 ```
 ``` python
+# 매치되는 문자열들을 리스트로 반환
+rst = pattern.findall('python is the best')
+```
+``` python
 # 매치되는 문자열들을 다른 문자열로 변환한 뒤 전체 문자열 반환
-rst = pattern.sub('word after', 'python is the best')
+rst = pattern.sub('after', 'before')
 ```
 ``` python
 # 전체 문자열에서 매치되는 패턴 문자를 기준으로 양 옆 문자를 나눠버린 리스트 반환
@@ -487,6 +492,21 @@ m.group(1) # 첫번째 괄호 안 문자열
 m.start() # 시작 지점
 m.end() # 끝 지점+1
 m.span() # (시작 지점, 끝 지점+1)
+```
+
+``` python
+# 예제1
+m = re.search('([0-9]{4})-([0-9]{2})-([0-9]{2})', '오늘은 2023-04-02 입니다.')
+m.group() / m.group(0) # 2023-04-02
+m.group(1) # 2023
+m.group(2) # 04
+m.group(3) # 02
+
+# 예제2
+new_sentence = re.sub('apple|orange', 'fruit', 'apple box orange tree') # fruit box fruit tree 
+
+# 예제 3
+split_list = re.split(r'[: ,]', 'apple orange:banana,tomato') # ['apple', 'orange', 'banana', 'tomato']
 ```
 
 ## 기타
