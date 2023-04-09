@@ -478,8 +478,8 @@ rst = pattern.finditer('python is the best')
 rst = pattern.findall('python is the best')
 ```
 ``` python
-# 매치되는 문자열들을 다른 문자열로 변환한 뒤 전체 문자열 반환
-rst = pattern.sub('after', 'before')
+# 매치되는 문자를 다른 문자로 변환한 뒤 전체 문자열 반환
+rst = pattern.sub('word after', 'sentence')
 ```
 ``` python
 # 전체 문자열에서 매치되는 패턴 문자를 기준으로 양 옆 문자를 나눠버린 리스트 반환
