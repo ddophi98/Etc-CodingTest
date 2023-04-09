@@ -115,10 +115,10 @@ c_list = itertools.combinations(arr, 2) # 길이가 2인 조합
 ``` python
 # 조합
 def combination(arr, remain):
-    comb_lst = []
     if remain == 0:
         return [[]]
-
+    
+    comb_lst = []
     for i in range(len(arr)):
         for rst in combination(arr[i+1:], remain-1):
             comb_lst.append([arr[i]] + rst)
@@ -128,10 +128,10 @@ def combination(arr, remain):
 ``` python
 # 순열
 def permutation(arr, remain):
-    perm_lst = []
     if remain == 0:
         return [[]]
 
+    perm_lst = []
     for i in range(len(arr)):
         for rst in permutation(arr[:i] + arr[i+1:], remain-1):
             perm_lst.append([arr[i]] + rst)
@@ -180,6 +180,7 @@ a = float('inf') # 양의 무한대
 b = -math.inf # 음의 무한대
 b = float('-inf') # 음의 무한대
 c = math.sqrt(49) # 제곱근 -> 7
+c = 49**0.5 # 제곱근 -> 7
 d = math.pow(7, 2) # 제곱 -> 49
 d = 7**2 # 제곱 -> 49
 e = 9//2 # 몫 -> 4
