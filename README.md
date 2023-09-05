@@ -521,7 +521,11 @@ import sys
 sys.stdin.readline().strip() # 이게 더 빠르다
 
 # 두번째 방법
-input() 
+input()
+
+# 세번째 방법
+input = lambda: sys.stdin.readline().strip()
+input()
 ```
 - for문을 전부 돌면서 조건에 안걸리는 것을 찾고싶을 때 -> 일단 더해놓고 조건이 걸리면 빼기
 ``` python
