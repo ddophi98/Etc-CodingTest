@@ -245,15 +245,22 @@ b = a
 a[0] = 4
 print(b) # [4, 2, 3]
 ```
-- 깊은 복사
+- 깊은 복사1 (내부에 리스트 같은 값은 얕은 복사)
 ``` python
 a = [1, 2, 3]
-b = a[:]
+b = a[:] or b = a.copy()
 a[0] = 4
 print(b) # [1, 2, 3]
 
---- or ---
+// 깊은 복사1의 한계점
+a = [[1], 2, 3]
+b = a[:]
+a[0].append(2)
+print(b) # [[1, 2], 2, 3]
+```
 
+- 깊은 복사2 (전부 깊은 복사)
+``` python
 import copy
 b = copy.deepcopy(a)
 ```
@@ -289,6 +296,11 @@ lowerStr = sentence.lower()
 if upperStr.isupper()
 if lowerStr.islower()
 ```
+``` python
+- 복사
+// 기본적으로 깊은 복사
+str1 = str2
+```
 
 ### Dictionary 다루기
 - 선언
@@ -314,12 +326,20 @@ val = dict['a']
 val = dict.get('a')
 val = dict.get('a', 0) // 있으면 값 반환, 없으면 0 반환
 ```
+- 깊은 복사
+``` python
+// 깊은 복사1 (내부에 리스트 같은 값은 얕은 복사)
+dict2 = dict.copy()
+// 깊은 복사2 (전부 깊은 복사)
+dict2 = copy.deepcopy(dict)
+```
 - for문 이용하기
 ``` python
 for key in dict.keys()
 for value in dict.values()
 for key, value in dict.items()
 ```
+
 
 ## Set 다루기
 - 선언
@@ -357,6 +377,11 @@ s1.intersection(s2)  # {3, 4}
 # 차집합
 s1 - s2  # {1, 2}
 s1.difference(s2)  # {1, 2}
+```
+- 깊은 복사
+``` python
+// 깊은 복사1의 문제점 걱정 X (해시 가능 객체만 포함)
+s2 = s1.copy()
 ```
 - Frozenset
 ``` python
