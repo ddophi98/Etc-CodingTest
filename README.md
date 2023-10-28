@@ -296,8 +296,8 @@ lowerStr = sentence.lower()
 if upperStr.isupper()
 if lowerStr.islower()
 ```
-``` python
 - 복사
+``` python
 // 기본적으로 깊은 복사
 str1 = str2
 ```
