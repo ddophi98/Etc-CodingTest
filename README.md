@@ -639,3 +639,4 @@ print(d)  # 6
 - bfs 문제에서 큐에 append하는 데이터는 최대한 줄이자 (시간과 공간 복잡도를 둘 다 줄일 수 있다) [(알고스팟)](https://www.acmicpc.net/problem/1261)
 - dfs 문제가 무조건 스택 자료구조로 풀리는 것은 아니니, 재귀도 한번쯤 생각해보자 [(내리막길)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801520.md)
 - 시간 복잡도 먼저 생각해보고, 줄이려면 어떻게 동작해야하는지 생각해보는게 도움이 될 수도 있다. [(통근버스)](https://github.com/ddophi98/Etc-CodingTest/blob/main/Softeer%20%ED%86%B5%EA%B7%BC%EB%B2%84%EC%8A%A4%20%EC%B6%9C%EB%B0%9C%EC%88%9C%EC%84%9C.md)
+- 자료구조를 더 쪼개서 생각해봐야할 때도 있다. [(행렬과 연산)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4(%ED%96%89%EB%A0%AC%EA%B3%BC%20%EC%97%B0%EC%82%B0).md)
