@@ -11,7 +11,8 @@
 - [Dictionary 다루기](#dictionary-다루기)   
 - [Set 다루기](#set-다루기)   
 - [Deque 다루기](#deque-다루기)   
-- [Heap 다루기](#heap-다루기)   
+- [Heap 다루기](#heap-다루기)
+- [고차 함수](#고차-함수)  
 - [정규 표현식](#정규-표현식)   
 - [기타](#기타)   
 - [주의할 점](#주의할-점)   
@@ -439,6 +440,24 @@ max_val = -hq.heappop(heap)
 # 맨 앞 값을 기준으로 정렬된다는 점을 이용하기
 hq.heappush(heap, (-value, value))
 max_val = hq.heappop(heap)[1]
+```
+
+## 고차 함수
+``` python
+# map
+def myfunc(num):
+    return num*2
+mylist = [1, 2, 3]
+newlist = list(map(myfunc, mylist)) # [2, 4, 6]
+
+# filter
+def myfunc(num):
+    return num%2==1
+mylist = [1, 2, 3]
+newlist = list(map(myfunc, mylist)) # [1, 3]
+
+# lambda로 써도 됨
+newlist = list(map(lambda x: x*2, mylist)) # [2, 4, 6]
 ```
 
 ## 정규 표현식
