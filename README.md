@@ -663,3 +663,5 @@ print(d)  # 6
 - BFS는 최단 경로의 해를 반환한다는 것을 기억하자. [(말이 되고픈 원숭이)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801600.md)
 - DP 점화식에서 dp[x]가 dp[x-1] 말고도 dp[x-k] 하고 관련이 있을 수도 있다. [(팰린드롬 분할)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801509.md)
 - 1씩 줄여가면서 탐색하는건 오래 걸리니, 포인터로 뛰어넘으면서 탐색하는거를 생각해보자. [(컵라면)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%201781.md)
+- 뒤쪽부터 계산하고 싶다면 재귀를 생각해보자. [(우수 마을)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801949.md)
+- DP를 할 때 여러 상태가 있다면, 키 값으로 상태도 가지면 된다. [(우수 마을)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801949.md)
