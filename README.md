@@ -74,11 +74,13 @@
 > - [백준 2252번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%802252.md)
 > - https://velog.io/@kimdukbae/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC-Topological-Sorting
 
-**에라토스테네스의 체(소수 구하기)**  
+**에라토스테네스의 체 (소수 구하기)**  
 > - 2부터 시작하여 숫자의 배수들을 지워나감
 > - [백준 1644번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801644.md)
 
-
+**최장 증가 부분수열 (LIS)**
+> - 리스트 원소 하나씩 순회 -> 이전거보다 크다면 DP 다음 위치에 저장 / 이전거보다 작다면 이진 탐색으로 알맞은 위치 찾아서 DP 업데이트
+> - DP만 쓰는 방법도 있는데 시간복잡도 큼
 
 ## DFS 및 BFS
 - DFS
