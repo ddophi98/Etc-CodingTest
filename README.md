@@ -81,6 +81,7 @@
 **최장 증가 부분수열 (LIS)**
 > - 리스트 원소 하나씩 순회 -> 이전거보다 크다면 DP 다음 위치에 저장 / 이전거보다 작다면 이진 탐색으로 알맞은 위치 찾아서 DP 업데이트
 > - DP만 쓰는 방법도 있는데 시간복잡도 큼
+> - [백준 3745번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%203754.md)
 
 ## DFS 및 BFS
 - DFS
