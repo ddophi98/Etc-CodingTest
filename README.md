@@ -343,6 +343,18 @@ for key in dict.keys()
 for value in dict.values()
 for key, value in dict.items()
 ```
+- defaultdict
+``` python
+from collections import defaultdict
+
+d1 = defaultdict(int) # 기본값이 0으로 되어있음
+d2 = defaultdict(list) # 기본값이 []으로 되어있음
+d3 = defaultdict(set) # 기본값이 set()으로 되어있음
+
+def default_value():
+    return -1
+d4 = defaultdict(default_value) # 기본값이 -1로 되어있음
+```
 
 
 ## Set 다루기
