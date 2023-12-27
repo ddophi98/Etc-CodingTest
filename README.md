@@ -647,7 +647,6 @@ print(d)  # 6
 - 방문한 노드를 저장할 때는 ```checked.append((n, node))``` 보다는 ```checked[n].append(node)``` 형태로 저장하자
 - 간단한 코드상에서는 Python3가 메모리, 속도 측에서 우세할 수 있는 것이고, 복잡한 코드(반복)을 사용하는 경우에서는 PyPy3가 우세한 편이다
 - 숫자가 무조건 한자리라고만 생각하지는 말자
-- ```a in lst```로 확인하기보다는 ```dict[a] = False``` 같은걸로 확인하는게 빠르다
 - 그리고 만약 가능하다면 ```visited = [[False for _ in range(w)] for _ in range(h)]``` 처럼 visited도 graph와 같은 형태로 정의하고 체크하는게 훨씬 빠르다
 - 하지만 리스트는 메모리가 많이 든다는 점, 초기화할 때 시간 좀 걸린다는 점 주의하자 -> 딕셔너리 쓰는게 나을 때도 있다.
 - 투포인터는 ```l, r = 0, 0``` 에서 시작할수도 있고, ```l, r = 0, n``` 에서 시작할 수도 있다
@@ -668,3 +667,4 @@ print(d)  # 6
 - 1씩 줄여가면서 탐색하는건 오래 걸리니, 포인터로 뛰어넘으면서 탐색하는거를 생각해보자. [(컵라면)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%201781.md)
 - 뒤쪽부터 계산하고 싶다면 재귀를 생각해보자. [(우수 마을)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801949.md)
 - DP를 할 때 여러 상태가 있다면, 키 값으로 상태도 가지면 된다. [(우수 마을)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801949.md)
+- 원소가 들어있는지 확인하는 방법에는 여러가지가 있다. 그냥 리스트 탐색, 이진 탐색, dic 및 set 탐색. 세번째꺼가 O(1)으로 가장 빠르다. [(합이 0인 네 정수)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%207453.md)
