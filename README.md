@@ -15,7 +15,7 @@
 - [고차 함수](#고차-함수)  
 - [정규 표현식](#정규-표현식)   
 - [기타](#기타)   
-- [주의할 점](#주의할-점)   
+- [꿀팁](#꿀팁)   
 
 
 ## 알고리즘 종류
@@ -652,7 +652,7 @@ print(d)  # 6
 - 세 꼭짓점의 좌표로 삼각형 넓이 구하기
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/72330884/184631017-e8c8734b-2995-4157-89b9-5957e134dc6a.png">
 
-## 주의할 점
+## 꿀팁
 - 큰 숫자 %로 나눠서 출력하는 문제는, 맨 마지막에 나눠주는 것이 아니라 과정 중간중간 나눠주는 것이 훨씬 빠르다
 - dp[(y, x)] = True 보다는 dp[y][x] = True 가 메모리 측면에서 좋다
 - 전역 변수는 왠만하면 피하고 return으로 결과값을 반환하자
@@ -680,3 +680,4 @@ print(d)  # 6
 - 뒤쪽부터 계산하고 싶다면 재귀를 생각해보자. [(우수 마을)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801949.md)
 - DP를 할 때 여러 상태가 있다면, 키 값으로 상태도 가지면 된다. [(우수 마을)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801949.md)
 - 원소가 들어있는지 확인하는 방법에는 여러가지가 있다. 그냥 리스트 탐색, 이진 탐색, dic 및 set 탐색. 세번째꺼가 O(1)으로 가장 빠르다. [(합이 0인 네 정수)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%207453.md)
+- 그냥 리스트 전부 탐색하기에 시간이 너무 오래 걸릴 떄, 절반으로 쪼개기만 해도 극적으로 감소할 때도 있다. [(부분수열의 합2)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801208.md)
