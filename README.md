@@ -83,6 +83,10 @@
 > - DP만 쓰는 방법도 있는데 시간복잡도 큼
 > - [백준 3745번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%203754.md)
 
+**세그먼트트리**
+> - 루트가 전체 합, 자식들은 각각 왼쪽, 오른쪽 합
+> - [백준 1275번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801275.md)
+
 ## DFS 및 BFS
 - DFS
 ``` python
