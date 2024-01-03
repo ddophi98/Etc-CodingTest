@@ -685,3 +685,4 @@ print(d)  # 6
 - DP를 할 때 여러 상태가 있다면, 키 값으로 상태도 가지면 된다. [(우수 마을)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801949.md)
 - 원소가 들어있는지 확인하는 방법에는 여러가지가 있다. 그냥 리스트 탐색, 이진 탐색, dic 및 set 탐색. 세번째꺼가 O(1)으로 가장 빠르다. [(합이 0인 네 정수)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%207453.md)
 - 그냥 리스트 전부 탐색하기에 시간이 너무 오래 걸릴 떄, 절반으로 쪼개기만 해도 극적으로 감소할 때도 있다. [(부분수열의 합2)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801208.md)
+- 이진탐색을 단순히 원소 찾는것 뿐만 아니라, 답을 가정하고 해당 답이 맞는지 검사하는데에도 쓸 수 있다. [(K번째 수)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801300.md)
