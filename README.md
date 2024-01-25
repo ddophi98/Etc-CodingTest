@@ -604,6 +604,12 @@ for i in range(10):
         cnt -= 1
         break
 ```
+
+- 누적합
+``` python
+from itertools import accumulate
+list(accumulate([1, 2, 3])) // [1, 3, 6]
+```
 - 소수인지 판별하기
 ``` python
 def is_prime(num):
