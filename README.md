@@ -590,6 +590,11 @@ import sys
 sys.stdin.readline().strip() # 이게 더 빠르다
 
 # 두번째 방법
+import sys
+read = sys.stdin.readline
+read().strip()
+
+# 세번째 방법
 input()
 
 # 세번째 방법
@@ -610,6 +615,19 @@ for i in range(10):
 from itertools import accumulate
 list(accumulate([1, 2, 3])) // [1, 3, 6]
 ```
+
+- Class 사용하기
+``` python
+class Person:
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+        self.address = "경기"
+
+    def print_info(self):
+        print(self.name, self.email, self.address)
+```
+
 - 소수인지 판별하기
 ``` python
 def is_prime(num):
