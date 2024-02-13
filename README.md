@@ -587,7 +587,7 @@ split_list = re.split(r'[: ,]', 'apple orange:banana,tomato') # ['apple', 'orang
 ``` python
  # 첫번째 방법
 import sys
-sys.stdin.readline().strip() # 이게 더 빠르다
+sys.stdin.readline().strip() # 이게 세번째보다 더 빠르다
 
 # 두번째 방법
 import sys
@@ -595,10 +595,6 @@ read = sys.stdin.readline
 read().strip()
 
 # 세번째 방법
-input()
-
-# 세번째 방법
-input = lambda: sys.stdin.readline().strip()
 input()
 ```
 - for문을 전부 돌면서 조건에 안걸리는 것을 찾고싶을 때 -> 일단 더해놓고 조건이 걸리면 빼기
@@ -626,6 +622,13 @@ class Person:
 
     def print_info(self):
         print(self.name, self.email, self.address)
+```
+
+- 비트 연산
+``` python
+1 << 3 # 1000(2) = 8
+8 | (1 << 1) # 1010(2) = 10
+10 & (1 << 1) # 0010(2) = 2
 ```
 
 - 소수인지 판별하기
@@ -712,3 +715,4 @@ print(d)  # 6
 - 그냥 리스트 전부 탐색하기에 시간이 너무 오래 걸릴 떄, 절반으로 쪼개기만 해도 극적으로 감소할 때도 있다. [(부분수열의 합2)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801208.md)
 - 이진탐색을 단순히 원소 찾는것 뿐만 아니라, 답을 가정하고 해당 답이 맞는지 검사하는데에도 쓸 수 있다. [(K번째 수)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801300.md)
 - 일일이 탐색하기에는 시간이 너무 오래 걸릴때, 그룹화하여 그룹 내부는 미리 계산해놓을 수 있다. [(구간 합 구하기)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%202042.md)
+- 키 값으로 리스트를 사용하고 싶다면 frozenset, 비트마스킹 방법이 있다. 그 중에서는 비트마스킹이 빠르고 메모리 효율 좋다. [(외판원 순회)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%202098.md)
