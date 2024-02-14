@@ -716,3 +716,4 @@ print(d)  # 6
 - 이진탐색을 단순히 원소 찾는것 뿐만 아니라, 답을 가정하고 해당 답이 맞는지 검사하는데에도 쓸 수 있다. [(K번째 수)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801300.md)
 - 일일이 탐색하기에는 시간이 너무 오래 걸릴때, 그룹화하여 그룹 내부는 미리 계산해놓을 수 있다. [(구간 합 구하기)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%202042.md)
 - 키 값으로 리스트를 사용하고 싶다면 frozenset, 비트마스킹 방법이 있다. 그 중에서는 비트마스킹이 빠르고 메모리 효율 좋다. [(외판원 순회)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%202098.md)
+- DP가 꼭 i-1을 이용한 재귀식일 필요는 없고, 더 작은 범위일 수도 있다. [(사칙연산)](https://github.com/ddophi98/Etc-CodingTest/blob/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4(%EC%82%AC%EC%B9%99%EC%97%B0%EC%82%B0).md)
