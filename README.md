@@ -85,6 +85,7 @@
 
 **세그먼트트리**
 > - 루트가 전체 합, 자식들은 각각 왼쪽, 오른쪽 합
+> - [백준 2357번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%80%202357.md)
 > - [백준 1275번](https://github.com/ddophi98/Etc-CodingTest/blob/main/%EB%B0%B1%EC%A4%801275.md)
 
 ## DFS 및 BFS
