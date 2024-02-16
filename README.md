@@ -474,7 +474,7 @@ newlist = list(map(myfunc, mylist)) # [2, 4, 6]
 def myfunc(num):
     return num%2==1
 mylist = [1, 2, 3]
-newlist = list(map(myfunc, mylist)) # [1, 3]
+newlist = list(filter(myfunc, mylist)) # [1, 3]
 
 # lambda로 써도 됨
 newlist = list(map(lambda x: x*2, mylist)) # [2, 4, 6]
