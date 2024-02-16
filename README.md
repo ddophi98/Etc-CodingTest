@@ -685,7 +685,7 @@ print(d)  # 6
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/72330884/184631017-e8c8734b-2995-4157-89b9-5957e134dc6a.png">
 
 ## 꿀팁
-- 큰 숫자 %로 나눠서 출력하는 문제는, 맨 마지막에 나눠주는 것이 아니라 과정 중간중간 나눠주는 것이 훨씬 빠르다
+- 큰 숫자 %로 나눠서 출력하는 문제는, 맨 마지막에 나눠주는 것이 아니라 과정 중간중간 나눠주는 것이 훨씬 빠르다 (+,-,* 분배법칙 적용됨)
 - dp[(y, x)] = True 보다는 dp[y][x] = True 가 메모리 측면에서 좋다
 - 전역 변수는 왠만하면 피하고 return으로 결과값을 반환하자
 - 방문한 노드를 저장할 때는 ```checked.append((n, node))``` 보다는 ```checked[n].append(node)``` 형태로 저장하자
