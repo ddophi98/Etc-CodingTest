@@ -632,6 +632,12 @@ class Person:
 10 & (1 << 1) # 0010(2) = 2
 ```
 
+- 아스키코드 변환
+```python
+ord('a') # 97
+chr(97) # 'a'
+```
+
 - 소수인지 판별하기
 ``` python
 def is_prime(num):
